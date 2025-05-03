@@ -1106,6 +1106,7 @@ justify-content: space-between;
 /* .product-add-area  */
 
 .product-grid4,.product-grid4 .product-image4{
+    height: 230px;
 position:relative;
 overflow: hidden;}
 
@@ -1134,7 +1135,7 @@ margin: 10px;}
 .product-grid4 .product-discount-label{left:auto;right:10px;background-color:#d7292a}
 .product-grid4:hover .product-new-label{opacity:0}
 .product-grid4 .product-content{ padding: 25px 0 20px 10px; width: 50%;text-align: left;}
-.product-grid4 .title{font-size:15px;font-weight:400;text-transform:capitalize;margin:0 0 7px;transition:all .3s ease 0s}
+.product-grid4 .title{height: 60px; font-size:15px;font-weight:400;text-transform:capitalize;margin:0 0 7px;transition:all .3s ease 0s}
 .product-grid4 .title a{color:#222;text-decoration: none;}
 .product-grid4 .title a:hover{color:#16a085}
 .product-grid4 .price{color:#16a085;font-size:22px;font-weight:700;margin:0 2px 15px 0;display:block}
@@ -1156,8 +1157,8 @@ margin: 10px;}
     font-size: 30px;
     display: flex;
     position: absolute;
-    bottom:10px;
-    left: 5%;
+    bottom:6%;
+    left: 2%;
     z-index: 2;
   }
   .offer-timer div {
@@ -1167,7 +1168,7 @@ margin: 10px;}
     font-size: 26px;
     font-weight: 400;
     width: 40px;
-    height: 80px;
+    height: 60px;
    margin-left: 10px;
   }
   .offer-timer .timetext {
@@ -1907,7 +1908,8 @@ width: 30%;
      padding: 0 2%;
     }
     .product-grid4 .add-to-cart{
-        font-size: 10px;
+        font-size: 8px;
+        padding: 10px;
     }
     /* top navbar end  */
     /* .e-commerce-body start  */
@@ -2030,13 +2032,14 @@ width: 30%;
      }
      .slider-info p {
         margin-bottom: 10px;
+        font-size: 10px;
     }
     .slider img{
         width: 100%;
         height: auto;
         }
     .slider-info h1{
-    font-size: 26px;
+    font-size: 20px;
     }
      .slider .price span {
          color: #000;
@@ -2093,9 +2096,19 @@ width: 30%;
     .feature-product p{
      display: none;
     }
+    .product-grid4 .title {
+        font-size: 10px;}
+    .product-grid4 .price {
+            font-size: 16px;}    
     .featurevisible{
         display: none;
     }
+    .product-grid4 .price span {
+        font-size: 8px;}
+        .grid4-rating {
+            font-size: 10px;
+            margin: 12px 0;
+        }
     .what-we-do .grocry-sopping1 {
      height: 180px;
     }
@@ -2515,6 +2528,10 @@ width: 30%;
                 .top-nav p {
                     font-size: 9px;
                     margin: 5px 0;
+                }
+                .text-center {
+                    text-align: left !important;
+                    margin: 10px 0;
                 }
 }
 @media screen and (max-width:319px) {
