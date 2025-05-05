@@ -1107,8 +1107,12 @@ justify-content: space-between;
 
 .product-grid4,.product-grid4 .product-image4{
     height: 230px;
-position:relative;
-overflow: hidden;}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
 
 .product-grid4{text-align:center;overflow:hidden;z-index:1;transition:all .3s ease 0s;
 display: flex;padding: 10px;height:auto; justify-content: space-between;border: 1px solid #E5E7EB;position: relative;
@@ -1316,9 +1320,7 @@ margin: 10px;}
     z-index: 1;
     padding: 40px;
 }
-.product-banner img{
-    height: 328px;
-}
+
 a{
     text-decoration: none;
 }
@@ -1476,6 +1478,9 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
 
 
 @media screen and (min-width:1025px) and (max-width:1366px) {
+    .product-grid4 .add-to-cart{
+        font-size: 12px;
+    }
     .top-nav {
         padding: 0 5%;
     }
@@ -1613,6 +1618,12 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
         }
 }
 @media screen and (min-width:768px) and (max-width:1024px) {
+    .product-grid4 .title {
+        font-size: 12px;
+    }
+    .container-rating {
+        padding: 0 4%;
+    }
     .btn-primary{
         display: block;
     }
@@ -1632,7 +1643,7 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
     }
     
     .product-grid4 .add-to-cart{
-        font-size: 12px;
+        font-size: 8px;
     }
     /* top navbar end  */
     /* .e-commerce-body start  */
@@ -1890,6 +1901,10 @@ width: 30%;
       
 }
 @media screen and (min-width:540px) and (max-width:767px){
+    .container-rating {
+        padding: 0 4%;
+    }
+
   .btn-primary{
     display: block;
   }
@@ -2135,6 +2150,7 @@ width: 30%;
     }
     .sellerproduct .productBanner{
         width: 40%;
+        padding: 1%;
     }
     .online-store{
      display: none;
@@ -2201,6 +2217,10 @@ width: 30%;
   
 }
 @media screen and (min-width:320px) and (max-width:540px) {
+    .container-rating {
+        padding: 0 2%;
+    }
+    
   .btn-primary{
     display: block;
   }
@@ -2506,8 +2526,10 @@ width: 30%;
     }
     .product-grid4 .add-to-cart{
         font-size: 8px;
+        padding: 10px;
     }
     .product-grid4 .title {
+        height: auto;
         font-size: 10px;}
         .grid4-rating {
             margin: 10px 0;
@@ -2535,6 +2557,12 @@ width: 30%;
                 }
 }
 @media screen and (max-width:319px) {
+    .container-rating {
+        padding: 0 2%;
+    }
+    .footer_ul_amrc{
+        font-size: 10px;
+    }
    .btn-primary{
     display: block
    }
