@@ -29,7 +29,7 @@ body{padding:   0;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding:0 7%;
+        padding:0 12%;
     }
     .top-nav p{
         color: #fff;
@@ -639,7 +639,9 @@ a{
     .dropdown-menubar ul {
         display: grid;
     }
-   
+    .offset-3 {
+        margin-left: 0%;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
@@ -692,11 +694,12 @@ a{
          display: none;
         }
         .cart {
-            width: 200px;
+            display: none;
+            /* width: 200px;
             display: flex
         ;
             justify-content: space-between;
-            align-items: center;
+            align-items: center; */
         }
      .hamburgermenu{
          display: block;
@@ -827,11 +830,11 @@ a{
      display: none;
     }
     .cart {
-        width: 200px;
-        display: flex
-    ;
+        display: none;
+        /* width: 200px;
+        display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: center; */
     }
  .hamburgermenu{
      display: block;
@@ -899,7 +902,7 @@ a{
     background: paleturquoise;
 }
 .firstmenu-footer{
-    width: 50%;
+    width: 45%;
    }
    .footer-text {
     display: block;
@@ -921,8 +924,16 @@ a{
     align-items: center;
     justify-content: center;
      height: auto;
-     padding: 0 2%;
+     padding:2%;
     }
+    .top-nav p{
+        font-size: 8px;
+    }
+    .timer span {
+        font-size: 14px;
+    }
+    .timer .smalltext {
+        font-size: 10px;}
     /* top navbar end  */
     /* .e-commerce-body start  */
     .e-commerce-body {
@@ -1049,4 +1060,12 @@ a{
     .navbar-menu ul li a {
         padding: 10px 0;
     } 
+    .top-nav p{
+        font-size: 8px;
+    }
+    .timer span {
+        font-size: 14px;
+    }
+    .timer .smalltext {
+        font-size: 10px;}
 }
