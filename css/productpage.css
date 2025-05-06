@@ -1313,6 +1313,9 @@ align-items: center;
 .right-menubar .navbar-menu ul li:hover{
   background: none;
 }
+.slider {
+  height: 400px;
+}
 }
 @media screen and (min-width:768px) and (max-width:1024px) {
   .navbar-menu ul li a {
@@ -1544,7 +1547,9 @@ padding: 2% 10%;
 .middle-nav{
   padding: 0;
 }
-
+.slider {
+  height: 280px;
+}
 /* for futher improvment */
 
 }
@@ -1820,6 +1825,9 @@ align-items: center;
 }
 .footer-text{
   flex-wrap: wrap;
+}
+.slider {
+  height: 280px;
 }
 
 }
@@ -2126,6 +2134,9 @@ width: 100%;}
   position: block;
   top: 62%;
   padding: 10px;
+}
+.slider {
+  height: 200px;
 }
 }
 @media screen and (max-width:319px) {
