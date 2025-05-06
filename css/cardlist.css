@@ -614,6 +614,9 @@ a{
 .navbar-menu ul li a {
     padding: 10px 0;
 }
+.right-menubar .navbar-menu ul li:hover{
+    background: none;
+}
 }
 @media screen and (min-width:768px) and (max-width:1024px) {
     .navbar-menu ul li a {
@@ -730,7 +733,7 @@ a{
         padding:5px 10px;
     }
     .right-menubar .navbar-menu ul li:hover{
-        background: paleturquoise;
+        background: none;
     }
     .firstmenu-footer{
         width: 30%;
@@ -861,7 +864,7 @@ a{
         padding:5px 10px;
     }
     .right-menubar .navbar-menu ul li:hover{
-        background: paleturquoise;
+        background: none;
     }
     .firstmenu-footer{
         width: 30%;
@@ -992,7 +995,7 @@ a{
     padding:5px 10px;
 }
 .right-menubar .navbar-menu ul li:hover{
-    background: paleturquoise;
+    background: none;
 }
 .firstmenu-footer{
     width: 50%;
@@ -1121,9 +1124,7 @@ a{
 .right-menubar .navbar-menu ul li{
     padding:5px 10px;
 }
-.right-menubar .navbar-menu ul li:hover{
-    background: paleturquoise;
-}
+
 .firstmenu-footer{
     width: 50%;
    }

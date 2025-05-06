@@ -824,7 +824,7 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
         padding:5px 10px;
     }
     .right-menubar .navbar-menu ul li:hover{
-        background: paleturquoise;
+        background: none;
     }
     .firstmenu-footer{
         width: 30%;
@@ -958,7 +958,7 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
         padding:5px 10px;
     }
     .right-menubar .navbar-menu ul li:hover{
-        background: paleturquoise;
+        background: none;
     }
     .firstmenu-footer{
         width: 30%;
@@ -1092,7 +1092,7 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
         padding:5px 10px;
     }
     .right-menubar .navbar-menu ul li:hover{
-        background: paleturquoise;
+        background: none;
     }
     .firstmenu-footer{
         width: 30%;
@@ -1232,7 +1232,7 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
         padding:5px 10px;
     }
     .right-menubar .navbar-menu ul li:hover{
-        background: paleturquoise;
+        background: none;
     }
     .firstmenu-footer{
         width: 45%;
@@ -1363,7 +1363,7 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
         padding:5px 10px;
     }
     .right-menubar .navbar-menu ul li:hover{
-        background: paleturquoise;
+        background: none;
     }
     .firstmenu-footer{
         width: 100%;

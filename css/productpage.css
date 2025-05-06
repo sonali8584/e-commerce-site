@@ -1310,7 +1310,9 @@ align-items: center;
 .product-horizontal .product-content{
   padding: 3% 0;
 }
-
+.right-menubar .navbar-menu ul li:hover{
+  background: none;
+}
 }
 @media screen and (min-width:768px) and (max-width:1024px) {
   .navbar-menu ul li a {
@@ -1405,7 +1407,7 @@ padding: 2% 10%;
     padding:5px 10px;
 }
 .right-menubar .navbar-menu ul li:hover{
-    background: paleturquoise;
+  background: none;
 }
 .slider-info {
     width: 70%;
@@ -1639,7 +1641,7 @@ align-items: center;
     padding:5px 10px;
 }
 .right-menubar .navbar-menu ul li:hover{
-    background: paleturquoise;
+  background: none;
 }
 .slider-info {
     width: 80%;
@@ -1936,7 +1938,7 @@ flex-wrap: wrap;
     padding:5px 10px;
 }
 .right-menubar .navbar-menu ul li:hover{
-    background: paleturquoise;
+  background: none;
 }
 .offcanvas-body img{
   margin-right: 10px;

@@ -1368,7 +1368,7 @@ button a{
    padding:5px 10px;
 }
 .right-menubar .navbar-menu ul li:hover{
-   background: paleturquoise;
+  background: none;
 }
 .slider-info {
    width: 80%;
@@ -1703,8 +1703,8 @@ flex-wrap: wrap;
        padding:5px 10px;
    }
    .right-menubar .navbar-menu ul li:hover{
-       background: paleturquoise;
-   }
+    background: none;
+}
    .slider-info {
        width: 80%;
        position: absolute;
@@ -2057,8 +2057,8 @@ flex-wrap: wrap;
      padding:5px 10px;
  }
  .right-menubar .navbar-menu ul li:hover{
-     background: paleturquoise;
- }
+  background: none;
+}
  .slider-info {
      width: 80%;
      position: absolute;
@@ -2463,8 +2463,8 @@ flex-wrap: wrap;
      padding:5px 10px;
  }
  .right-menubar .navbar-menu ul li:hover{
-     background: paleturquoise;
- }
+  background: none;
+}
  .slider-info {
      width: 80%;
      position: absolute;
@@ -2836,8 +2836,8 @@ flex-wrap: wrap;
      padding:5px 10px;
  }
  .right-menubar .navbar-menu ul li:hover{
-     background: paleturquoise;
- }
+  background: none;
+}
  .slider-info {
      width: 80%;
      position: absolute;
