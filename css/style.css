@@ -1162,7 +1162,7 @@ margin: 10px;}
     font-size: 30px;
     display: flex;
     position: absolute;
-    bottom:6%;
+    bottom:4%;
     left: 2%;
     z-index: 2;
   }
@@ -2580,7 +2580,9 @@ width: 30%;
     overflow: hidden;
     width: 100%;
 }
-
+.offer-timer {
+    bottom: 9px;
+    left: 2%;}
 }
 @media screen and (max-width:319px) {
     .container-rating {
