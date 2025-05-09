@@ -653,13 +653,16 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
          padding: 0 2%;
         }
         .middle-nav{
-            padding: 0 7%;
+            padding: 0 4%;
         }
         /* top navbar end  */
         /* .e-commerce-body start  */
         .e-commerce-body {
          padding: 0 2%;
         }  
+        .container-blog{
+            padding: 0 4%;
+         }
         /* end  */
         /* row-top area  */
         .row_top{
@@ -717,7 +720,7 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
          margin:10px 0;
      }
      .jinstore-navbar-input {
-         width: 82%;
+         width: 100%;
      }
      .jinstore-navbar-button{
         width: 62px;
@@ -809,6 +812,9 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
     .row_top{
      height: auto;
  }
+ .container-blog{
+    padding: 0 2%;
+ }
  .hamburgermenu{
     display: block;
  }
@@ -861,7 +867,7 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
      margin:10px 0;
  }
  .jinstore-navbar-input {
-     width: 82%;
+     width: 100%;
  }
  .jinstore-navbar-button{
     width: 62px;
@@ -947,6 +953,21 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
     .e-commerce-body {
      padding: 0 2%;
     }  
+    .container-blog{
+        padding: 0 2%;
+    }
+    .top-nav p {
+        font-size: 9px;
+        margin: 10px 0;
+    }
+    .timer span {
+        font-size: 14px;
+    }
+    .timer .smalltext{
+        font-size: 11px;
+    }
+    .leftmenubar {
+        padding: 8px 60px 8px 10px;}
     /* end  */
     /* row-top area  */
     .row_top{
@@ -1004,7 +1025,7 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
      margin:10px 0;
  }
  .jinstore-navbar-input {
-     width: 82%;
+     width: 100%;
  }
  .jinstore-navbar-button{
     width: 62px;
@@ -1144,7 +1165,7 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
      margin:10px 0;
  }
  .jinstore-navbar-input {
-     width: 82%;
+     width: 100%;
  }
  .jinstore-navbar-button{
     width: 62px;

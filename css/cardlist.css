@@ -622,6 +622,7 @@ a{
     .navbar-menu ul li a {
         padding: 10px 0;
     }
+  
     /* top navbar start */
        .top-nav{
         flex-wrap: wrap;
@@ -686,6 +687,12 @@ a{
      .top-nav a{
          color: #fff ;
      }
+     .container-cart{
+padding: 0 7%;
+     }
+     .middle-nav {
+        padding: 0 7%;
+    }
      .jinstore-navbar-search {
          width: 100%;
          display: flex;
@@ -693,7 +700,7 @@ a{
          margin:10px 0;
      }
      .jinstore-navbar-input {
-         width: 80%;
+         width: 100%;
      }
      .dropdown{
          display: none;
@@ -752,6 +759,9 @@ a{
 @media screen and (min-width:540px) and (max-width:767px){
     .navbar-menu ul li a {
         padding: 10px 0;
+    }
+    .container-cart{
+        padding: 0 7%;
     }
     /* top navbar start */
      .top-nav{
@@ -824,7 +834,7 @@ a{
          margin:10px 0;
      }
      .jinstore-navbar-input {
-         width: 80%;
+         width: 100%;
      }
      .dropdown{
          display: none;
@@ -866,6 +876,7 @@ a{
     .right-menubar .navbar-menu ul li:hover{
         background: none;
     }
+
     .firstmenu-footer{
         width: 30%;
        }
@@ -883,6 +894,22 @@ a{
 @media screen and (min-width:320px) and (max-width:539px) {
     .navbar-menu ul li a {
         padding: 10px 0;
+    }
+    .top-nav p {
+        font-size: 9px;
+        margin: 10px 0;
+    }
+    .container-cart{
+        padding: 0 4%;
+    }
+    .leftmenubar {
+        padding: 8px 60px 8px 10px;
+    }
+    .timer .smalltext{
+        font-size: 11px;
+    }
+    .timer span {
+        font-size: 14px;
     }
     /* top navbar start */
    .top-nav{
@@ -948,6 +975,9 @@ a{
  .top-nav a{
      color: #fff ;
  }
+ .middle-nav {
+    padding: 0 4%;
+}
  .jinstore-navbar-search {
      width: 100%;
      display: flex;
@@ -955,7 +985,7 @@ a{
      margin:10px 0;
  }
  .jinstore-navbar-input {
-     width: 80%;
+     width: 100%;
  }
  .dropdown{
      display: none;

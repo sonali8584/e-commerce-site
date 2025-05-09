@@ -467,6 +467,7 @@ flex-direction: column;
         align-items: center;
         justify-content: center;
         border-bottom: 1px solid gainsboro;
+        text-align: center;
     }
    .office-info-area{
     width: 50%;
@@ -707,15 +708,18 @@ a{
  .top-nav{
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
      height: auto;
-     padding: 0 2%;
+     padding: 0 7%;
     }
     /* top navbar end  */
     /* .e-commerce-body start  */
     .e-commerce-body {
      padding: 0 2%;
     }  
+    .container-FAQ{
+        padding: 0 7%;
+    }
     /* end  */
     /* row-top area  */
     .row_top{
@@ -774,7 +778,7 @@ a{
      margin:10px 0;
  }
  .jinstore-navbar-input {
-     width: 80%;
+     width: 100%;
  }
  .dropdown{
      display: none;
@@ -891,6 +895,9 @@ color: #fff;
     .navbar-menu ul li a {
         padding: 10px 0;
     }
+    .container-FAQ{
+        padding: 0 7%;
+    }
     /* top navbar start */
     .top-nav{
         flex-wrap: wrap;
@@ -962,7 +969,7 @@ color: #fff;
          margin:10px 0;
      }
      .jinstore-navbar-input {
-         width: 80%;
+         width: 100%;
      }
      .dropdown{
          display: none;
@@ -1079,6 +1086,9 @@ color: #fff;
     .navbar-menu ul li a {
         padding: 10px 0;
     }
+    .container-FAQ{
+        padding: 0 7%;
+    }
     /* top navbar start */
   .top-nav{
     flex-wrap: wrap;
@@ -1150,7 +1160,7 @@ color: #fff;
      margin:10px 0;
  }
  .jinstore-navbar-input {
-     width: 80%;
+     width: 100%;
  }
  .dropdown{
      display: none;
@@ -1267,6 +1277,21 @@ color: #fff;
     .navbar-menu ul li a {
         padding: 10px 0;
     }
+    .container-FAQ{
+        padding: 0 4%;
+    }
+    .middle-nav {
+        padding: 0 4%;
+    }
+    .top-nav p {
+        font-size: 9px;
+        margin: 10px 0;
+    }
+    .timer span {
+        font-size: 14px;
+    }
+    .timer .smalltext {
+        font-size: 11px;}
     /* top navbar start */
    .top-nav{
     flex-wrap: wrap;
@@ -1274,6 +1299,9 @@ color: #fff;
     justify-content: center;
      height: auto;
      padding: 0 2%;
+    }
+    .leftmenubar {
+        padding: 8px 60px 8px 10px;
     }
     /* top navbar end  */
     /* .e-commerce-body start  */
@@ -1441,7 +1469,7 @@ color: #fff;
     display: block;
 }
 .container{
-    padding: 0 2%;
+    padding: 0 4%;
 }
 .navigation a{
 color: #fff;

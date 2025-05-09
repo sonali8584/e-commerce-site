@@ -640,6 +640,9 @@ a{
     .right-menubar .navbar-menu ul li:hover{
         background: none;
     }
+    .offset-3 {
+        margin-left: 20%;
+    }
 }
 @media screen and (min-width:768px) and (max-width:1024px) {
     .navbar-menu ul li a {
@@ -654,7 +657,7 @@ a{
      padding: 0 2%;
     }
     .middle-nav{
-        padding: 0 2%;
+        padding: 0;
     }
     .navigation a{
         color: #fff;
@@ -722,7 +725,7 @@ a{
      margin:10px 0;
  }
  .jinstore-navbar-input {
-     width: 80%;
+     width: 100%;
  }
  .jinstore-navbar-button{
     width: 63.5px;
@@ -829,11 +832,12 @@ a{
      padding: 0 2%;
     }
     .middle-nav{
-        padding: 0 2%;
+        padding: 0;
     }
     .navigation a{
         color: #fff;
     }
+   
     /* top navbar end  */
     /* .e-commerce-body start  */
     .e-commerce-body {
@@ -896,7 +900,7 @@ a{
      margin:10px 0;
  }
  .jinstore-navbar-input {
-     width: 80%;
+     width: 100%;
  }
  .jinstore-navbar-button{
     width: 63.5px;
@@ -982,10 +986,22 @@ a{
      padding: 0 2%;
     }
     .middle-nav{
-        padding: 0 2%;
+        padding: 0;
     }
+    .top-nav p {
+        font-size: 9px;
+        margin: 10px 0;
+    }
+    .timer span {
+        font-size: 14px;
+    }
+    .timer .smalltext {
+        font-size: 11px;}
     .navigation a{
         color: #fff;
+    }
+    .leftmenubar {
+        padding: 8px 60px 8px 10px;
     }
     /* top navbar end  */
     /* .e-commerce-body start  */
@@ -1049,7 +1065,7 @@ a{
      margin:10px 0;
  }
  .jinstore-navbar-input {
-     width: 80%;
+     width: 100%;
  }
  .jinstore-navbar-button{
     width: 63.5px;
