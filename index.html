@@ -16,6 +16,10 @@
 
   <!-- swiper css link  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- scroll fade  -->
+   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <!-- custom css link  -->
   <link rel="stylesheet" href="css/style.css"/>
 </head>
@@ -703,6 +707,7 @@
          <div class="payment-area">          
                     <div class="row mbr-justify-content-center">
                         <div class="col-lg-3 mbr-col-md-6 col-sm-6">
+                            <div data-aos="zoom-in-down" data-aos-delay="600" data-aos-easing="ease-out-cubic">
                             <div class="wrap">
                                 <div class="ico-wrap">
                                     <img src="images/Clip path group.png" alt="img"/>
@@ -713,8 +718,10 @@
                                         checkout. Ylig kärrtorpa.</p>
                                 </div>
                             </div>
+                            </div>
                         </div>
                         <div class="col-lg-3 mbr-col-md-6 col-sm-6">
+                            <div data-aos="zoom-in-down" data-aos-delay="600" data-aos-easing="ease-out-cubic">
                             <div class="wrap">
                                 <div class="ico-wrap">
                                     <img src="images/SVG (1).png" alt="img"/>
@@ -727,8 +734,10 @@
                                         checkout. Ylig kärrtorpa.</p>
                                 </div>
                             </div>
+                            </div>
                         </div>
                         <div class="col-lg-3 mbr-col-md-6 col-sm-6">
+                            <div data-aos="zoom-in-down" data-aos-delay="600" data-aos-easing="ease-out-cubic">
                             <div class="wrap">
                                 <div class="ico-wrap">
                                     <img src="images/SVG (2).png" alt="img"/>
@@ -741,8 +750,10 @@
                                         checkout. Ylig kärrtorpa.</p>
                                 </div>
                             </div>
+                            </div>
                         </div>
                         <div class="col-lg-3 mbr-col-md-6 col-sm-6">
+                            <div data-aos="zoom-in-down" data-aos-delay="600" data-aos-easing="ease-out-cubic">
                             <div class="wrap">
                                 <div class="ico-wrap">
                                     <img src="images/Clip path group (1).png" alt="img"/>
@@ -752,6 +763,7 @@
                                     <p class="mbr-fonts-style text1 mbr-text display-6">Tasigförsamhet beteendedesign. Mobile
                                         checkout. Ylig kärrtorpa.</p>
                                 </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -1924,6 +1936,7 @@
     <div class="container-fluid">
         <div class="row mt-5">
             <div class="col-sm-12 col-md-12 col-lg-6 ">
+                <div data-aos="fade-right" data-aos-delay="500">
                 <div class="card grocry-sopping1">
                     <div class="card-block block-1">
                         <div class="service-offer">Only This Week</div>
@@ -1932,8 +1945,10 @@
                         <button class="shop-btn">Shop Now <i class="fas fa-arrow-right"></i></button>
                     </div>
                 </div>
+                </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6">
+                 <div data-aos="fade-left" data-aos-delay="500">
                 <div class="card grocry-sopping2">
                     <div class="card-block block-2">
                         <div class="service-offer">Only This Week</div>
@@ -1941,6 +1956,7 @@
                         <p class="card-text">A different kind of grocery store</p>
                         <button class="shop-btn">Shop Now <i class="fas fa-arrow-right"></i></button>
                     </div>
+                </div>
                 </div>
             </div>
             
@@ -2676,10 +2692,12 @@
 
     <!-- bootsrap js link  -->
      <script src="js/bootstrap.bundle.min.js"></script>
-
+ <!-- scroll fade  -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
      <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <!-- Initialize Swiper -->
      <script>
       var swiper =new Swiper(".mySwiper",{
@@ -2753,6 +2771,8 @@ var swiper =new Swiper(".my-Swiper",{
         parallax:true,
         speed:400
     })
+// scroll fade 
+    AOS.init();
       </script>
 
      <!-- custom js link  -->

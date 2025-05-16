@@ -19,9 +19,14 @@ body{padding:   0;
     }
     p{
         font-size: 12px;
+
     }
+    
     h3{
       font-size: 28px;
+    }
+    .category-text p{
+      margin-bottom: 8px;
     }
     .offset-3 {
       margin-left: 0%;
@@ -478,13 +483,16 @@ flex-direction: column;
     overflow: hidden;
       }
   
-     .slider-area{
+    .category-slider .slider-area{
         background: #eee;
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 14px;
         color: #000;
         margin: 0;
         padding: 0;
+        overflow: hidden;
+        height: 200px;
+        margin-bottom: 40px;
       }
   
       .swiper {
@@ -2000,6 +2008,7 @@ flex-wrap: wrap;
     }
     .grocry-images-area{
       flex-wrap:wrap ;
+      margin: 20px 0;
     }
     .editor-products{
       flex-direction: column;
@@ -2024,6 +2033,17 @@ flex-wrap: wrap;
     top: 58%;
     right: 0;
     left: 5%;
+}
+.grocry-img{
+  width: 70px;
+  height: 80px;
+  overflow: hidden;
+}
+.grocry-img p{
+  font-size: 7px;
+}
+.category-slider .slider-area{
+  height: 400px;
 }
 .category-product-info h3{
   font-size: 12px;

@@ -750,7 +750,7 @@ section {
 .wrap:hover {
     background: linear-gradient(160deg,#80e8f8 10%,#0a193b 90%);
     color: white;
-    scale: 1.2;
+    scale: 1.1;
     transition: all ease-in-out 0.6s;
 }
 
