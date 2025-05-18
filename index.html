@@ -2772,10 +2772,12 @@ var swiper =new Swiper(".my-Swiper",{
         parallax:true,
         speed:400
     })
-    
-// scroll fade 
-    AOS.init();
 
+
+ AOS.init();
+ AOS.init({
+    disable: 'mobile' // disables AOS on phones and tablets
+  });
       </script>
 
      <!-- custom js link  -->
