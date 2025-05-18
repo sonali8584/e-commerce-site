@@ -38,7 +38,7 @@ h3{
     color: #000;
 }
 .fas{
-    margin-left: 10px;
+    margin-left: 0;
 }
 .price-area .fas{
     margin-left: 10px;
@@ -2528,6 +2528,9 @@ width: 30%;
     }
     .popular-company p{
      display: none;
+    }
+    .shop-btn .fas{
+        margin-left: 10px;
     }
     .review-block{
      flex-wrap: wrap;
