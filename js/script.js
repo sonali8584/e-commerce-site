@@ -1,3 +1,14 @@
+ AOS.init({
+    disable: function () {
+      // Disable AOS on screens smaller than 1024px (tablet and mobile)
+      return window.innerWidth < 1025;
+    },
+    // Other AOS options (optional)
+    duration: 800,
+    easing: 'ease-in-out',
+  });
+
+
 
 //  const second = document.querySelector(".second .number");
 // const minutes =document.querySelector(".minutes .number");
