@@ -1161,7 +1161,7 @@ margin: 10px;}
 .product-grid4 .title a:hover{color:#16a085}
 .product-grid4 .price{color:#16a085;font-size:22px;font-weight:700;margin:0 2px 15px 0;display:block}
 .product-grid4 .price span{color:#909090;font-size:13px;font-weight:400;letter-spacing:0;text-decoration:line-through;text-align:left;vertical-align:middle;display:inline-block}
-.product-grid4 .add-to-cart{border:1px solid #e5e5e5;display:flex;justify-content: space-between; padding:10px 20px;color:#888;font-weight:600;font-size:14px;transition:all .3s;text-decoration: none;border-radius: 22px;width: 100%;}
+.product-grid4 .add-to-cart{border:1px solid #e5e5e5;display:flex; align-items: center;  justify-content: space-between; padding:10px 20px;color:#888;font-weight:600;font-size:14px;transition:all .3s;text-decoration: none;border-radius: 22px;width: 100%;}
 .product-grid4:hover .add-to-cart{border:1px solid transparent;background:#16a085;color:#fff;text-decoration: none;}
 .product-grid4 .add-to-cart:hover{background-color:#634C9F;box-shadow:0 0 10px rgba(0,0,0,.5)}
 .offer-timer span {
@@ -1170,35 +1170,13 @@ margin: 10px;}
 }
 
 .offer-timer{
-    margin: 0 ;
-    color: #0b0b0b;
-    display: flex;
-    font-weight: 100;
-    text-align: center;
-    font-size: 30px;
-    display: flex;
-    position: absolute;
-    bottom:4%;
-    left: 2%;
-    z-index: 2;
+    margin: 0 ;color: #0b0b0b;display: flex;font-weight: 100;text-align: center;font-size: 30px;display: flex;position: absolute;bottom:4%;left: 2%;z-index: 2;
   }
   .offer-timer div {
-    padding: 10px;
-    border-radius: 3px;
-   border: 1px solid gainsboro;
-    font-size: 26px;
-    font-weight: 400;
-    width: 40px;
-    height: 60px;
-   margin-left: 10px;
+    padding: 10px; border-radius: 3px; border: 1px solid gainsboro;  font-size: 26px;  font-weight: 400;  width: 40px;  height: 60px; margin-left: 10px;
   }
   .offer-timer .timetext {
-    color: #080808;
-    font-size: 12px;
-    font-weight: 500;
-    display: block;
-    padding: 4px;
-    width: auto;
+    color: #080808; font-size: 12px; font-weight: 500; display: block; padding: 4px; width: auto;
    
   }
   .offer-timer #time-up {
