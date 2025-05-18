@@ -1180,44 +1180,26 @@ margin: 10px;}
    
   }
   .offer-timer #time-up {
-    margin: 8px 0 0;
-    text-align: left;
-    font-size: 14px;
-    font-style: normal;
-    color: #000000;
-    font-weight: 500;
-    letter-spacing: 1px;
+    margin: 8px 0 0;text-align: left;font-size: 14px;font-style: normal;color: #000000;font-weight: 500;letter-spacing: 1px;
   }
 
 .grid4-rating{
-    color:#FACC15;
-    font-size: 14px;
-    margin: 20px 0;
+    color:#FACC15; font-size: 14px; margin: 20px 0;
 }
 
 
 
 .what-we-do .grocry-sopping1{
-    height: 280px;
-    background-image: url(/images/banner-08.jpg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 10px;
+    height: 280px; background-image: url(/images/banner-08.jpg.png); background-size: cover; background-repeat: no-repeat; margin-right: 10px;
 }
 .what-we-do .grocry-sopping2{
-    height: 280px;
-    background-image: url(/images/banner-09.jpg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 10px;
+    height: 280px; background-image: url(/images/banner-09.jpg.png); background-size: cover; background-repeat: no-repeat; margin-left: 10px;
 }
 .what-we-do .grocry-sopping1 h3{
-    width: 310px;
-    font-size: 28px;
+    width: 310px; font-size: 28px;
 }
 .what-we-do .grocry-sopping2 h3{
-    width: 300px;
-    font-size: 28px;
+    width: 300px;  font-size: 28px;
 }
 .what-we-do .grocry-sopping2 p{
     width: 300px;
@@ -1228,9 +1210,7 @@ margin: 10px;}
 /* rating  */
 
 .popular-company{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex; align-items: center; justify-content: space-between;
 }
 .popular-company h3{
     margin-right: 10px;
@@ -1239,19 +1219,10 @@ margin: 10px;}
     display: flex;
 }
 .company-btn{
-    border: 2px solid #000;
-    border-radius: 8px;
-    background: #fff;
-    padding: 4px 10px;
-    font-size: 12px;
-    font-weight: 600;
-    margin: 20px 0;
+    border: 2px solid #000; border-radius: 8px; background: #fff; padding: 4px 10px; font-size: 12px; font-weight: 600; margin: 20px 0;
 }
 .rating-block{
-	background-color:#FAFAFA;
-	border:1px solid #EFEFEF;
-	padding:15px 15px 20px 15px;
-	border-radius:3px;
+	background-color:#FAFAFA;border:1px solid #EFEFEF;padding:15px 15px 20px 15px;border-radius:3px;
 }
 .bold{
 	font-weight:700;
@@ -1267,7 +1238,7 @@ margin: 10px;}
 	border-radius:3px;
 	margin-bottom:15px;
     display: flex;
-    justify-content: space-between;
+ justify-content: space-between;
 }
 .review-block-name{
 	font-size:12px;
