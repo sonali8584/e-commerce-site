@@ -816,7 +816,7 @@
 <h3>New Arrivals</h3>
 <p>Dont miss this opportunity at a special discount just for this week.</p>
 </div>
-<div class="grocery-slider-btn">View All</div>
+<div class="grocery-slider-btn">View All <i class="fas fa-arrow-right"></i></div>
 </div>
 <!-- product-shopping-area  -->
 
@@ -1484,7 +1484,7 @@
 <h3>Featured Products</h3>
 <p>Do not miss the current offers until the end of March.</p>
 </div>
-<button class="featured-btn">View All</button>
+<button class="featured-btn">View All <i class="fas fa-arrow-right"></i></button>
 
 </div>
 <div class="product-add-area">
@@ -1495,10 +1495,10 @@
                 <div class="product-grid4">
                     <div class="product-image4">
                         <a href="#">
-                            <img class="pic-1" src="images/Link → 1-109-500x500.jpg.png"> 
+                            <img class="pic-1" id="product1" src="images/Link → 1-109-500x500.jpg.png" alt=""> 
                         </a>
                         <ul class="social">
-                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                            <li><a href="details.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
                             <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
                             <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
                         </ul>
@@ -1519,7 +1519,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <a class="add-to-cart" href="">ADD TO CART<i class="fas fa-plus"></i></a>
+                        <a class="add-to-cart" href="#" onclick="addToCart(this)">ADD TO CART<i class="fas fa-plus"></i></a>
+
                     </div>
                 </div>
                 
@@ -1970,7 +1971,7 @@
         <h3>Best Sellers</h3>
         <p>Some of the new products arriving this weeks</p>
     </div>
-    <button class="bestseller-btn"><a href="filter.html"> View All</a></button>
+    <button class="bestseller-btn"><a href="filter.html"> View All <i class="fas fa-arrow-right"></i></a></button>
 </div>
 <div class="best-selling-product">
     <div class="sellerproduct">
@@ -2270,7 +2271,7 @@
         <h3>Popular Companies</h3>
         <p>Some of the new products arriving this weeks</p>
     </div> 
-    <button class="company-btn">View All</button>
+    <button class="company-btn">View All <i class="fas fa-arrow-right"></i></button>
     </div>
 </div>
 
@@ -2773,6 +2774,10 @@ var swiper =new Swiper(".my-Swiper",{
     })
 // scroll fade 
     AOS.init();
+    AOS.init({
+  disable: 'mobile'
+});
+
       </script>
 
      <!-- custom js link  -->

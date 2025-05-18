@@ -388,23 +388,67 @@
             <div class="card">
                 <div class="container-fliud">
                     <div class="wrapper">
-                        <div class="preview col-md-6">
+                        <div class="slider">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
                             
-                            <div class="preview-pic tab-content">
-                              <div class="tab-pane active" id="pic-1"><img src="images/Main.png" /></div>
-                              <div class="tab-pane" id="pic-2"><img src="images/Link → 1-109-500x500.jpg.png" /></div>
-                              <div class="tab-pane" id="pic-3"><img src="images/Link → 1-109-500x500.jpg.png" /></div>
-                              <div class="tab-pane" id="pic-4"><img src="images/Link → 1-109-500x500.jpg.png" /></div>
-                              <div class="tab-pane" id="pic-5"><img src="images/Link → 1-109-500x500.jpg.png" /></div>
-                            </div>
-                            <ul class="preview-thumbnail nav nav-tabs">
-                              <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="images/Link → 1-109-500x500.jpg.png" /></a></li>
-                              <li><a data-target="#pic-2" data-toggle="tab"><img src="images/Link → 1-109-500x500.jpg.png" /></a></li>
-                              <li><a data-target="#pic-3" data-toggle="tab"><img src="images/Link → 1-109-500x500.jpg.png" /></a></li>
-                              <li><a data-target="#pic-3" data-toggle="tab"><img src="images/Link → 1-109-500x500.jpg.png" /></a></li>
-                            </ul>
-                            
-                        </div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+       <img src="images/Main.png" alt=""/>
+      </div>
+      <div class="swiper-slide">
+       <img src="images/Main.png" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/Main.png" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/Main.png" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/Main.png" alt=""/>
+      </div>
+      <div class="swiper-slide">
+       <img src="images/Main.png" alt=""/>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <div thumbsSlider="" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/Main.png" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/Main.png" alt=""/>
+      </div>
+      <div class="swiper-slide">
+         <img src="images/Main.png" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/Main.png" alt=""/>
+      </div>
+      <div class="swiper-slide">
+       <img src="images/Main.png" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/Main.png" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/Main.png" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/Main.png" alt=""/>
+      </div>
+      <div class="swiper-slide">
+       <img src="images/Main.png" alt=""/>
+      </div>
+      <div class="swiper-slide">
+         <img src="images/Main.png" alt=""/>
+      </div>
+    </div>
+  </div>
+  </div>
                         <div class="details col-md-6">
                             <h3 class="product-title">Marketside Fresh Organic Bananas,
                                 Bunch</h3>
@@ -428,7 +472,7 @@
                             <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
                         
                             <div class="action">
-                                <button class="shopping-btn" type="button">add to cart</button>
+                                <button class="shopping-btn" type="button"><a href="cardlist.html">add to cart </a></button>
                                 <button class="buy-btn">Buy Now</button>
                                 <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
                             </div>
@@ -801,6 +845,28 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- custom js  -->
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+
   <script src="js/script.js"></script>
 
 

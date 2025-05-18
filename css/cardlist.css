@@ -13,6 +13,9 @@ body{padding:   0;
         max-width: 100%;
         height: auto;
     }
+    h3{
+        font-size: 18px;
+    }
     p{
         font-size: 12px;
     }
@@ -605,6 +608,34 @@ a{
 .dawnload-img img{
     margin:15px 0;
 }
+.action a{
+  color: #fff;
+}
+
+
+
+
+
+.cartadd-items{
+    padding: 0 7%;
+}
+.cart-item-details{
+    display: grid;
+    align-items: center;
+}
+.remove-btn {
+       background-color: #ff4444;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .remove-btn:hover {
+      background-color: #cc0000;
+    }
 
 
 @media screen and (min-width:1025px) and (max-width:1366px) {

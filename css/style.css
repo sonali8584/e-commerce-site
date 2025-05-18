@@ -40,6 +40,9 @@ h3{
 .fas{
     margin-left: 0;
 }
+.price-area .fas{
+    margin-left: 10px;
+}
 .top-nav a{
     font-size: 12px;
     color: gray;
@@ -249,6 +252,9 @@ flex-direction: column;
 }
 .dropdown{
     width: 20%;
+}
+.row>*{
+    padding: 0;
 }
 .rating-area .row>* {
     flex-shrink: 0;
@@ -741,16 +747,16 @@ section {
     height: 102px;
     display: flex;
     background: white;
-  
     border-radius: 0.5rem;
     box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
     transition: all ease-in-out 0.6s;
+    margin: 5px;
 }
 
 .wrap:hover {
     background: linear-gradient(160deg,#80e8f8 10%,#0a193b 90%);
     color: white;
-    scale: 1.1;
+    scale: 0.8;
     transition: all ease-in-out 0.6s;
 }
 
@@ -839,11 +845,13 @@ section{
     background-image: url(/images/banner-02.jpg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-left: 10px;
 }
 .card-3{
     background-image: url(/images/banner-03.jpg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-left: 10px;
 }
 .what-we-do .card:hover{
 	-webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
@@ -896,7 +904,7 @@ section{
     /* new-arrival  */
     .new-arrival{
         display: flex;
-        padding: 20px 10px;
+        padding: 20px 0;
         align-items: center;
         justify-content: space-between;
     }
@@ -958,7 +966,12 @@ section{
     height: auto;}
 .product-grid .product-image{
     position:relative;
-    transition:all .3s ease 0s;}
+    transition:all .3s ease 0s;
+height: 220px;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;}
 .product-grid .product-image img{
     width: 100%;
     height: auto;
@@ -1035,21 +1048,25 @@ section{
     background-image: url(/images/banner-04.jpg.png);
     background-size: cover;
     background-repeat: no-repeat;
+   
 }
 .part-2{
     background-image: url(/images/banner-05.jpg.png);
     background-size: cover;
     background-repeat: no-repeat;
+     margin-left: 10px;
 }
 .part-3{
     background-image: url(/images/banner-06.jpg.png);
     background-size: cover;
     background-repeat: no-repeat;
+     margin-left: 10px;
 }
 .part-4{
     background-image: url(/images/banner-07.jpg.png);
     background-size: cover;
     background-repeat: no-repeat;
+     margin-left: 10px;
 }
 .text{
     margin:20px 0px;
@@ -1081,7 +1098,6 @@ section{
 }
 .text-center {
    text-align: left !important;
-   margin: 20px 0;
 }
 
 
@@ -1208,12 +1224,14 @@ margin: 10px;}
     background-image: url(/images/banner-08.jpg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-right: 10px;
 }
 .what-we-do .grocry-sopping2{
     height: 280px;
     background-image: url(/images/banner-09.jpg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-left: 10px;
 }
 .what-we-do .grocry-sopping1 h3{
     width: 310px;
@@ -1455,7 +1473,6 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
 .btn-primary{
     display: none;
 }
-
 
 
 /* @media screen and (min-width: 768px) {
@@ -1788,7 +1805,7 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
  .slider-info .price {
             font-size: 18px;}
      .wrap{
-         margin: 10px 0;
+         margin: 10px;
          padding: 0 10px;
      }
     .new-arrival p{
@@ -1817,6 +1834,7 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
     }
     .what-we-do .grocry-sopping1 {
      height: 180px;
+     margin: 5px;
     }
     .what-we-do .grocry-sopping2 h3{
      font-size: 16px;
@@ -1824,6 +1842,7 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
     }
     .what-we-do .grocry-sopping2{
      height: 180px;
+     margin: 5px;
     }
     .what-we-do .grocry-sopping1 h3{
      width: 250px;
@@ -2230,9 +2249,21 @@ width: 30%;
     .what-we-do{
      display: block;
     }
+    .card-2{margin: 0;}
+    .card-3{margin: 0;}
+    .what-we-do .grocry-sopping2{
+        margin-left: 0;
+    }
+    .what-we-do .grocry-sopping1{
+        margin-right: 0;
+    }
   
 }
 @media screen and (min-width:320px) and (max-width:540px) {
+    .aos-init aos-animate{
+        display: block;
+    }
+    
     .container-rating {
         padding: 0 2%;
     }
@@ -2427,6 +2458,9 @@ width: 30%;
          margin: 10px 0;
          padding: 0 10px;
      }
+     .wrap:hover{
+        scale: none;
+     }
     .new-arrival p{
      display: none;
     }
@@ -2448,7 +2482,14 @@ width: 30%;
       .productBanner{
      width: 100%
       }
-    
+    .card-2{margin: 0;}
+    .card-3{margin: 0;}
+    .what-we-do .grocry-sopping2{
+        margin-left: 0;
+    }
+    .what-we-do .grocry-sopping1{
+        margin-right: 0;
+    }
     .feature-product p{
      display: none;
     }
