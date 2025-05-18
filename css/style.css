@@ -1473,7 +1473,9 @@ footer p { font-size:13px; color:#000; padding-bottom:0px; margin: 20px 0;}
 .btn-primary{
     display: none;
 }
-
+  .shop-btn .fas{
+        margin-left: 10px;
+    }
 
 /* @media screen and (min-width: 768px) {
     .largenav {
@@ -2529,9 +2531,7 @@ width: 30%;
     .popular-company p{
      display: none;
     }
-    .shop-btn .fas{
-        margin-left: 10px;
-    }
+  
     .review-block{
      flex-wrap: wrap;
      padding: 0;
