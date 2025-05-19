@@ -1,4 +1,3 @@
- 
 
 //  const second = document.querySelector(".second .number");
 // const minutes =document.querySelector(".minutes .number");

@@ -2773,20 +2773,20 @@ var swiper =new Swiper(".my-Swiper",{
         speed:400
     })
 
-
  AOS.init();
  AOS.init({
     disable: 'mobile' // disables AOS on phones and tablets
   });
- AOS.init({
-  disable: function () {
-    // You can set your own breakpoint range for tablets
-    var width = window.innerWidth;
-    // For example, disable AOS for screen widths between 768px and 1024px (common tablet range)
-    return width >= 768 && width <= 1024;
-  }
-});
       </script>
+      <script>
+  if (window.innerWidth > 1024) {
+    // Only initialize AOS if it's desktop (screen > 1024px)
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+    });
+  }
+</script>
 
      <!-- custom js link  -->
       <script src="js/script.js"></script>
