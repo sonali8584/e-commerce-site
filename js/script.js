@@ -33,7 +33,7 @@
 //     days.textContent =dayValue < 10 ? `0${dayValue}` : dayValue;
 // },1000);
 
-console.log("sonali");
+// console.log("sonali");
 
 
 
@@ -101,6 +101,66 @@ console.log(menulist.classList.toggle("menuitem"));
 
 
 
+ // new arrivals start 
+  let newArrivalproducts = [
+   { image :"images/oil → 1-2-500x500.jpg.png",
+    title :"100 Percent Mango Juice 64fl oz Bottle",
+    price : 40,
+},
+ { image :"images/Link → 1-87-500x500.jpg.png",
+    title :"100 Percent Rising Pizza Crust – Pack",
+    price : 60,
+},
+ { image :"images/Link → 1-12-500x500.jpg.png",
+    title :"100 Percent Orange Juice 64 fl oz Bottle",
+    price : 30,
+},
+ { image :"images/Link → 1-30-500x500.jpg.png",
+    title :"100 Percent Margerita Pizza Crust Pack",
+    price : 50,
+},
+ { image :"images/Link → 1-500x500.jpg.png",
+    title :"100 Percent Evolve Protein Shake pack",
+    price : 120,
+},
+ { image :"images/Link → 1-9-500x500.jpg.png",
+    title :"100 Percent Angel Soft Mega Rolls 64 pack",
+    price : 140,
+},
+]
+
+// Target the container div
+let container = document.getElementsByClassName("swiper-slide");
+console.log(container);
+// Loop and insert HTML
+for (let i = 0; i < newArrivalproducts.length; i++) {
+  let product = newArrivalproducts[i];
+
+  let productHTML = `
+    <div class="product">
+      <img src="${product.image}" alt="${product.title}">
+      <h3>${product.title}</h3>
+      <p>Price: $${product.price}</p>
+    </div>
+  `;
+
+  container.innerHTML += productHTML;
+  console.log(product.image[i])
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Add to cart function
   function addToCart(button) {
@@ -125,7 +185,7 @@ console.log(menulist.classList.toggle("menuitem"));
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     const cartList = document.getElementById("cart-list");
 
-    cartList.innerHTML = ""; // Clear existing items
+    cartList.innerHTML = ""; 
 
     if (cart.length === 0) {
       cartList.innerHTML = "<p>Your cart is empty.</p>";
@@ -169,3 +229,8 @@ console.log(menulist.classList.toggle("menuitem"));
 
   // Combined window.onload
   window.onload = loadCart;
+
+
+
+
+ 
