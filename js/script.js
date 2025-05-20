@@ -130,25 +130,23 @@ console.log(menulist.classList.toggle("menuitem"));
 ]
 
 // Target the container div
-let container = document.getElementsByClassName("swiper-slide");
-console.log(container);
+// let container = document.getElementsByClassName("swiper-slide");
+// console.log(container);
 // Loop and insert HTML
-for (let i = 0; i < newArrivalproducts.length; i++) {
-  let product = newArrivalproducts[i];
+// for (let i = 0; i < newArrivalproducts.length; i++) {
+//   let product = newArrivalproducts[i];
 
-  let productHTML = `
-    <div class="product">
-      <img src="${product.image}" alt="${product.title}">
-      <h3>${product.title}</h3>
-      <p>Price: $${product.price}</p>
-    </div>
-  `;
+//   let productHTML = `
+//     <div class="product">
+//       <img src="${product.image}" alt="${product.title}">
+//       <h3>${product.title}</h3>
+//       <p>Price: $${product.price}</p>
+//     </div>
+//   `;
 
-  container.innerHTML += productHTML;
-  console.log(product.image[i])
-}
-
-
+//   container.innerHTML += productHTML;
+//   console.log(product.image[i])
+// }
 
 
 
@@ -162,75 +160,90 @@ for (let i = 0; i < newArrivalproducts.length; i++) {
 
 
 
-// Add to cart function
-  function addToCart(button) {
-    const productCard = button.closest(".product-grid4");
 
-    const name = productCard.querySelector(".title a").textContent.trim();
-    const priceText = productCard.querySelector(".price").childNodes[0].nodeValue.trim();
-    const price = parseFloat(priceText.replace("$", ""));
-    const image = productCard.querySelector("img").getAttribute("src");
 
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    cart.push({ name, price, image });
-
-    localStorage.setItem("cart", JSON.stringify(cart));
-
-    window.location.href = "cardlist.html"; // Redirect to cart page
+  function getCart() {
+    return JSON.parse(localStorage.getItem('cart')) || [];
   }
 
-  // Function to load cart and render items
-  function loadCart() {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    const cartList = document.getElementById("cart-list");
+  function saveCart(cart) {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
 
-    cartList.innerHTML = ""; 
+  function addToCart(name, price, image) {
+    let cart = getCart();
+    const index = cart.findIndex(item => item.name === name);
 
-    if (cart.length === 0) {
-      cartList.innerHTML = "<p>Your cart is empty.</p>";
-      return;
+    if (index !== -1) {
+      cart[index].quantity += 1;
+    } else {
+      cart.push({ name, price, image, quantity: 1 });
     }
 
-    cart.forEach((item, index) => {
-      const div = document.createElement("div");
-      div.classList.add("class-iteams");
-      div.style.display = "flex";
-      div.style.alignItems = "center";
-      div.style.marginBottom = "20px";
-      div.style.borderBottom = "1px solid #ccc";
-      div.style.paddingBottom = "10px";
+    saveCart(cart);
+    alert("Item added/updated!");
+  }
 
-      div.innerHTML = `
-        <img src="${item.image}" width="100" alt="${item.name}" style="margin-right: 20px; border-radius: 10px;">
-        <div class="cart-item-details">
-          <div>
-            <h3>${item.name}</h3>
-            <p>Price: $${item.price.toFixed(2)}</p>
-            <button class="remove-btn" onclick="removeFromCart(${index})"
-              style="background-color: #ff4444; color: white; border: none; padding: 6px 12px; cursor: pointer; border-radius: 5px;">
-              Remove
-            </button>
+  function removeFromCartByName(name) {
+    let cart = getCart();
+    cart = cart.filter(item => item.name !== name);
+    saveCart(cart);
+    alert("Item removed!");
+  }
+
+  function incrementQuantity(name) {
+    let cart = getCart();
+    const item = cart.find(item => item.name === name);
+    if (item) item.quantity += 1;
+    saveCart(cart);
+    showCart(); // optional if used in cart page
+  }
+
+  function decrementQuantity(name) {
+    let cart = getCart();
+    const item = cart.find(item => item.name === name);
+    if (item && item.quantity > 1) {
+      item.quantity -= 1;
+    } else {
+      cart = cart.filter(i => i.name !== name);
+    }
+    saveCart(cart);
+    showCart(); // optional if used in cart page
+  }
+
+
+
+   function displayCart() {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const container = document.getElementById('cart-list');
+      container.innerHTML = '';
+
+      if (cart.length === 0) {
+        container.innerHTML = '<p>Your cart is empty.</p>';
+        return;
+      }
+
+      cart.forEach((item, index) => {
+        container.innerHTML += `
+          <div style="border:1px solid #ccc; padding:10px; margin-bottom:10px;">
+            <img src="${item.image}" alt="${item.name}" style="width:100px;"><br>
+            <strong>${item.name}</strong><br>
+            ₹${item.price} x ${item.quantity} = ₹${item.price * item.quantity}
+            <div style="margin-top:5px;">
+              <button onclick="decrementQuantity('${item.name}')">−</button>
+              <span style="margin: 0 10px;">${item.quantity}</span>
+              <button onclick="incrementQuantity('${item.name}')">+</button>
+              <button onclick="removeFromCartByName('${item.name}')" style="margin-left:10px;">🗑 Remove</button>
+            </div>
           </div>
-        </div>
-      `;
+        `;
+      });
+    }
 
-      cartList.appendChild(div);
-    });
-  }
-
-  // Function to remove item
-  function removeFromCart(index) {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart.splice(index, 1); // Remove item
-    localStorage.setItem("cart", JSON.stringify(cart));
-    loadCart(); // Reload list
-  }
-
-  // Combined window.onload
-  window.onload = loadCart;
-
-
-
-
- 
+    function removeFromCart(index) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.splice(index, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      displayCart(); // Refresh the list
+    }
